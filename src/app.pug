@@ -1,0 +1,11 @@
+.container-fluid.py-5.bg-light(style="min-height:100vh;")
+  .row
+    .col-12.col-lg-12.col-xl-4.p-2.py-xl-5.border.border-white
+      warning-toast
+      form
+        .form-group
+          textarea#raw-text.form-control(cols="30" rows="10")
+        button.btn.btn-primary(type="submit") 轉換
+
+    .col-12.col-lg-12.col-xl-8.p-2.py-xl-5.border.border-white
+      investigation-list
