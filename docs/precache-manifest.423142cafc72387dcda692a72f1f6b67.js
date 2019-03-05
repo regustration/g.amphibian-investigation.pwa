@@ -12,16 +12,16 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/js/vendor.99e9af4c977df9014fde.js"
   },
   {
-    "revision": "2d7c0b8d69cf56272447938aff75ad8a",
-    "url": "/g.amphibian-investigation.pwa/static\\manifest.json"
-  },
-  {
     "revision": "82d0228f1bd31af3da9a7b23275d6c32",
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_144x144.png"
   },
   {
     "revision": "5f4c068bc8df2b819f5c1b6a62bc1d7b",
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_16x16.png"
+  },
+  {
+    "revision": "95cd0e36ab248d324b040ebbb575bd25",
+    "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_512x512.png"
   },
   {
     "revision": "9770849812d2d820962ead53a5226cbf",
@@ -34,10 +34,6 @@ self.__precacheManifest = [
   {
     "revision": "6c0dcb72815d1c4e7b65dad0d1c7d4ca",
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_72x72.png"
-  },
-  {
-    "revision": "95cd0e36ab248d324b040ebbb575bd25",
-    "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_512x512.png"
   },
   {
     "revision": "e79c663077eceadd124ea6ad47a3b1f7",
@@ -56,7 +52,11 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_1024x1024.png"
   },
   {
-    "revision": "e6cbb7585f8181e31e8d6323c81ecf59",
+    "revision": "f06829f052af6b17c71369b82e271957",
     "url": "/g.amphibian-investigation.pwa/index.html"
+  },
+  {
+    "revision": "2d7c0b8d69cf56272447938aff75ad8a",
+    "url": "/g.amphibian-investigation.pwa/\\g.amphibian-investigation.pwa\\static\\manifest.json"
   }
 ];
