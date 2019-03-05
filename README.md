@@ -1,7 +1,7 @@
 # Amphibian Investigation
 快速了解蛙調結果，方便快速上傳資料
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/regustration/g.amphibian-investigation.svg)](https://github.com/regustration/g.amphibian-investigation)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/regustration/g.amphibian-investigation.pwa.svg)](https://github.com/regustration/g.amphibian-investigation.pwa)
 
 ## 簡介
 
