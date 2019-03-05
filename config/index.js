@@ -3,8 +3,8 @@ const path = require('path')
 
 const build = {
   env: require('./prod.env'),
-  index: path.resolve(__dirname, '../doc/index.html'),
-  assetsRoot: path.resolve(__dirname, '../doc'),
+  index: path.resolve(__dirname, '../docs/index.html'),
+  assetsRoot: path.resolve(__dirname, '../docs'),
   assetsSubDirectory: 'static',
   assetsPublicPath: '/',
   productionSourceMap: true,
