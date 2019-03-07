@@ -46,7 +46,7 @@ const workbox = {
 }
 
 const manifest = {
-  filename: build.assetsPublicPath + 'static/manifest.json',
+  filename: 'static/manifest.json',
   ios: true,
   fingerprints: false,
   name: 'Amphibian Investigation',
