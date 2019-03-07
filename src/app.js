@@ -1,3 +1,4 @@
+import './registerSW'
 import './components/investigation-list'
 import './components/warning-toast'
 import { SPECIES, SPECIES_ABBRS } from './config/species'

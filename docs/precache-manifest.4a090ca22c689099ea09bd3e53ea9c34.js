@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_192x192.png"
   },
   {
-    "revision": "9c14b3bdc26108c8986a",
-    "url": "/g.amphibian-investigation.pwa/static/js/app.a86c7ccedb649f77ab93.js"
+    "revision": "9bc57bd3a604cae9b0e9",
+    "url": "/g.amphibian-investigation.pwa/static/js/app.3000fb326c55bfe23e04.js"
   },
   {
-    "revision": "aeb5eaab82f2a3e0140e",
-    "url": "/g.amphibian-investigation.pwa/static/js/vendor.99e9af4c977df9014fde.js"
+    "revision": "e700ab4d17db08e68f2a",
+    "url": "/g.amphibian-investigation.pwa/static/js/vendor.b0912b320bbbe52ca603.js"
   },
   {
     "revision": "aac976124bf0fe81af5347c403e576ce",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_1024x1024.png"
   },
   {
-    "revision": "e6cbb7585f8181e31e8d6323c81ecf59",
+    "revision": "cc4ab5dceff6b38115169a98aefc7add",
     "url": "/g.amphibian-investigation.pwa/index.html"
   }
 ];
