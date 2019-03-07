@@ -59,7 +59,7 @@
   "name": "Amphibian Investigation",
   "short_name": "Amphibian Investigation",
   "display": "standalone",
-  "start_url": "/g.amphibian-investigation.pwa/",
+  "start_url": "./index.html",
   "theme_color": "#384148",
   "background_color": "#384148"
 }
