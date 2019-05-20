@@ -15,9 +15,23 @@ class InvestigationList extends LitElement {
       .list-block {
         display: grid;
         grid-template-columns: repeat(3, .3333fr);
-        grid-gap: 5px;
+        grid-gap: 10px;
         font-size: 14px;
       }
+
+      @media only screen and (max-width:800px) {
+        .list-block {
+          grid-template-columns: repeat(2, .5fr);
+          grid-gap: 12px
+        }
+      }
+
+      @media only screen and (max-width:540px) {
+        .list-block {
+          grid-template-columns: 1fr;
+        }
+      }
+
       h3 {
         margin: 10px 0;
       }
