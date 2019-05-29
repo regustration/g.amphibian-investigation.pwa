@@ -1,6 +1,6 @@
 import { BEHAVIORS, BEHAVIORS_ABBRS } from './config/behaviors'
 
-const recordDetailReg = new RegExp(`(抱接|鳴|幼|公|母|成|蝌蚪|卵\\S?)(\\d+)(${BEHAVIORS_ABBRS.join('|')})?(:\\S+)?`)
+const recordDetailReg = new RegExp(`(抱接|鳴|幼|公|母|成|蝌蚪|卵\\S?)(\\d+)?(${BEHAVIORS_ABBRS.join('|')})?(:\\S+)?`)
 
 export function parseRecordDetail (str) {
   const m = str.match(recordDetailReg)
