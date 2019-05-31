@@ -1,9 +1,11 @@
-import { BEHAVIORS, BEHAVIORS_ABBRS } from './config/behaviors'
+import { BEHAVIORS } from './config/behaviors'
 
-const recordDetailReg = new RegExp(`(抱接|鳴|幼|公|母|成|蝌蚪|卵\\S?)(\\d+)?(${BEHAVIORS_ABBRS.join('|')})?(:\\S+)?`)
+// {型態}{數量}{行為}:{備註}
+const recordDetailReg = new RegExp(`(抱接|鳴|幼|公|母|成|蝌蚪|卵\\S?)(\\d+)?(\\S+)?(:\\S+)?`)
 
 export function parseRecordDetail (str) {
   const m = str.match(recordDetailReg)
+
   if (!m) {
     console.warn('看不懂：' + str)
     return null
