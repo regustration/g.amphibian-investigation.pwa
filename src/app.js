@@ -3,7 +3,7 @@ import './components/investigation-list'
 import './components/warning-toast'
 import { SPECIES, SPECIES_ABBRS } from './config/species'
 import { HABITATS, HABITATS_ABBRS } from './config/habitats'
-import { parseRecordDetail, pushSpeciesRecord, pushRecord, pushDetail, addSeeCount } from './utils'
+import { parseRecordDetail, pushSpeciesRecord, pushRecord, pushDetail, addSeeCount } from './utils/utils'
 
 let message = []
 const parseText = str => {

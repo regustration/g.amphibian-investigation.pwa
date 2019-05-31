@@ -3,7 +3,8 @@ import { LitElement, html, css } from 'lit-element'
 class InvestigationList extends LitElement {
   static get properties () {
     return {
-      result: { type: Array }
+      result: { type: Array },
+      copytime: { type: String }
     }
   }
 
@@ -35,11 +36,7 @@ class InvestigationList extends LitElement {
       h3 {
         margin: 10px 0;
       }
-      h3 small {
-        color: #aaa;
-        font-weight: normal;
-        font-style: italic;
-      }
+
       p {
         margin: .25em 0;
       }
@@ -53,6 +50,22 @@ class InvestigationList extends LitElement {
       .card-title-groups {
         display: grid;
         grid-template-columns: 1fr max-content;
+        grid-template-rows: .5fr .5fr;
+        grid-template-areas: "commonname statistics" "sciencename statistics";
+      }
+      .card-title-groups > h3 {
+        grid-area: commonname;
+        margin-bottom: 0;
+      }
+      .card-title-groups > small {
+        grid-area: sciencename;
+        color: #aaa;
+        font-weight: normal;
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      .card-title-groups > div {
+        grid-area: statistics;
       }
       .card-title-groups .summary-groups {
         margin-top: 14px;
@@ -109,7 +122,8 @@ class InvestigationList extends LitElement {
     const { result } = this
     return html`
       ${!result || !result.length ? '沒東西！' : html`
-        <a href="#" class="button" @click="${this.outputApiData}">API Data</a>
+        <a href="#" class="button" @click="${this.outputApiData}">複製API資料</a>
+        <small>API資料複製：${this.copytime || '-'}</small>
         <p>種類總數： ${result.length} 種</p>
         ${this._summaryOverview(result.see, result.hear)}
         <div class="list-block">${result.map(res => this._listItem(res))}</div>
@@ -117,7 +131,7 @@ class InvestigationList extends LitElement {
     `
   }
 
-  outputApiData (e) {
+  async outputApiData (e) {
     e.preventDefault()
     const apiDatas = []
     this.result.forEach(res => {
@@ -186,7 +200,12 @@ class InvestigationList extends LitElement {
       })
     })
 
-    console.log(JSON.stringify(apiDatas));
+    navigator.clipboard.writeText(JSON.stringify(apiDatas))
+      .then(_ => {
+        this.copytime = new Date().toLocaleString()
+        console.log('資料已複製!')
+      })
+      .catch(e => console.warn(`無法複製`, e))
   }
 
   _hear (hear) {
@@ -254,7 +273,8 @@ class InvestigationList extends LitElement {
     return html`
     <div class="data-card">
       <div class="card-title-groups">
-        <h3>${abbr} <br><small>${genus} ${sp}</small></h3>
+        <h3>${abbr} <br></h3>
+        <small>${genus} ${sp}</small>
         <div>${this._summarySpecies(summary.see, summary.hear)}</div>
       </div>
       <div class="card-body">

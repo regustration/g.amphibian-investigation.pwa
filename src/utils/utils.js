@@ -1,4 +1,4 @@
-import { BEHAVIORS } from './config/behaviors'
+import { BEHAVIORS } from '../config/behaviors'
 
 // {型態}{數量}{行為}:{備註}
 const recordDetailReg = new RegExp(`(抱接|鳴|幼|公|母|成|蝌蚪|卵\\S?)(\\d+)?(\\S+)?(:\\S+)?`)
