@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/js/vendor.d34d8b63a90e72ffbcac.js"
   },
   {
-    "revision": "aac976124bf0fe81af5347c403e576ce",
+    "revision": "d45270bb2019acf3a1140c08d964a004",
     "url": "/g.amphibian-investigation.pwa/static\\manifest.json"
   },
   {

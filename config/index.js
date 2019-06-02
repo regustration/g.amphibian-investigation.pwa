@@ -54,7 +54,7 @@ const manifest = {
   theme_color: '#384148',
   background_color: '#384148',
   display: 'standalone',
-  start_url: './index.html',
+  start_url: 'https://regustration.github.io/g.amphibian-investigation.pwa/',
   orientation: undefined,
   icons: [
     {

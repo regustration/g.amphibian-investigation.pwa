@@ -59,7 +59,7 @@
   "name": "Amphibian Investigation",
   "short_name": "Amphibian Investigation",
   "display": "standalone",
-  "start_url": "./index.html",
+  "start_url": "https://regustration.github.io/g.amphibian-investigation.pwa/",
   "theme_color": "#384148",
   "background_color": "#384148"
 }
