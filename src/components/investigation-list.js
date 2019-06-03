@@ -183,7 +183,7 @@ class InvestigationList extends LitElement {
             if (form === '幼') form = 3
             else if (form === '公') form = 4
             else if (form === '母') form = 5
-            else if (form === '成') form = 6
+            else if (form === '成') form = 8
 
             apiDatas.push(Object.assign({}, apiData, {
               observing_method_id: 0,
