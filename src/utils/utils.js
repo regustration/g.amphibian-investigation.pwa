@@ -77,11 +77,10 @@ export function pushSpeciesRecord (species, records, finalRecords) {
 
 export function pushRecord (records, newRecords) {
   newRecords.forEach(record => {
-    const dupRecord = records.find(r => r[0].detailId === record[0].detailId)
-    if (dupRecord) {
-      record[1].forEach(detail =>
-        pushDetail(dupRecord[1], [detail])
-      )
+    // 尋找重複的棲地
+    const recordByHabitat = records.find(r => r[0].detailId === record[0].detailId)
+    if (recordByHabitat) {
+      pushDetail(recordByHabitat[1], record[1])
     } else {
       records.push(record)
     }
@@ -91,8 +90,9 @@ export function pushRecord (records, newRecords) {
 export function pushDetail (details, newDetails) {
   newDetails.forEach(newDetail => {
     const dupDetail = details.find(d =>
-      d.form === newDetail.form && d.action === newDetail.action
+      d.form === newDetail.form && d.action.id === newDetail.action.id
     )
+    console.log({newDetail, details, dupDetail})
     if (dupDetail) {
       if (typeof dupDetail.count === 'number') {
         dupDetail.count += newDetail.count
