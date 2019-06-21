@@ -16,16 +16,16 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_128x128.png"
   },
   {
-    "revision": "ab91c60aefed92cc4d3a",
-    "url": "/g.amphibian-investigation.pwa/static/js/app.7cd08bef8fd6d1f00b5d.js"
+    "revision": "52736a724b4186025738",
+    "url": "/g.amphibian-investigation.pwa/static/js/app.3935cf6ac68fc6990c4d.js"
   },
   {
     "revision": "5f4c068bc8df2b819f5c1b6a62bc1d7b",
     "url": "/g.amphibian-investigation.pwa/static\\img\\icons\\icon_16x16.png"
   },
   {
-    "revision": "3d7279dfab0fde0ccdde",
-    "url": "/g.amphibian-investigation.pwa/static/js/vendor.4bbfa4c1fb9167bef399.js"
+    "revision": "369ea10807ee51ee352f",
+    "url": "/g.amphibian-investigation.pwa/static/js/vendor.a8816295d44a743a7464.js"
   },
   {
     "revision": "e79c663077eceadd124ea6ad47a3b1f7",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_1024x1024.png"
   },
   {
-    "revision": "ec19eb3ef1e6a6adf49073570db40c1a",
+    "revision": "90acb5ac406b01146cc90e846e3e6343",
     "url": "/g.amphibian-investigation.pwa/index.html"
   }
 ];

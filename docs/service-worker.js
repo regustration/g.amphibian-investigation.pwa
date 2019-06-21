@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/g.amphibian-investigation.pwa/precache-manifest.cda898cae7e2853220464baffbb9d028.js"
+  "/g.amphibian-investigation.pwa/precache-manifest.7a97be787fb2a000fb3fa38e1df536c7.js"
 );
 
 workbox.skipWaiting();
