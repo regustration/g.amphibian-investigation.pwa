@@ -1,7 +1,8 @@
 import './registerSW'
 import './components/investigation-list'
 import './components/warning-toast'
-import parseText from './utils/counting-sandi-style'
+import parseTextSandi from './utils/counting-sandi-style'
+import parseTextGus from './utils/counting-gus-style'
 
 $(() => {
   const $rawText = $('#raw-text')
@@ -10,6 +11,8 @@ $(() => {
     e.preventDefault()
 
     let message = []
+    const parseText = $('#counting-mode-1').is(':checked')
+      ? parseTextSandi : parseTextGus
     try {
       $res.result = parseText($.trim($rawText.val()), message)
     } catch (e) {

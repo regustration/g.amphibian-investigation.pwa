@@ -92,11 +92,8 @@ export function pushDetail (details, newDetails) {
     const dupDetail = details.find(d =>
       d.form === newDetail.form && d.action.id === newDetail.action.id
     )
-    console.log({newDetail, details, dupDetail})
     if (dupDetail) {
-      if (typeof dupDetail.count === 'number') {
-        dupDetail.count += newDetail.count
-      }
+      dupDetail.count += newDetail.count
     } else {
       details.push(newDetail)
     }

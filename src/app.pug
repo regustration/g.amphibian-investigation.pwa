@@ -1,11 +1,19 @@
-.container-fluid.py-5.bg-light(style="min-height:100vh;")
-  .row
+.container-fluid.bg-light
+  .row(style="min-height:100vh;")
     .col-12.col-lg-12.col-xl-4.p-2.py-xl-5.border.border-white
-      warning-toast
       form
+        .py-3.px-2
+          .mb-1 文字轉換模式
+          .custom-control.custom-radio.custom-control-inline
+            input#counting-mode-1.custom-control-input(type="radio" name="counting-mode" checked)
+            label.custom-control-label(for="counting-mode-1") Sandi's style
+          .custom-control.custom-radio.custom-control-inline
+            input#counting-mode-2.custom-control-input(type="radio" name="counting-mode")
+            label.custom-control-label(for="counting-mode-2") Gus' style
+        warning-toast.py-3.mb-3
         .form-group
-          textarea#raw-text.form-control(cols="30" rows="10")
-        button.btn.btn-primary(type="submit") 轉換
+          textarea#raw-text.form-control(cols="30" rows="10" style="white-space: nowrap;  overflow: auto;")
+        button.btn.btn-primary(type="submit") 轉換！
 
     .col-12.col-lg-12.col-xl-8.p-2.py-xl-5.border.border-white
       investigation-list

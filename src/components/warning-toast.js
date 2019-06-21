@@ -9,6 +9,11 @@ class WarningToast extends LitElement {
 
   static get styles () {
     return css`
+      :host {
+        max-height: 200px;
+        overflow: auto;
+        display: block;
+      }
       p {
         background: #ffc107;
         color: #555;

@@ -27,6 +27,9 @@ function parseRecordDetail (str) {
     default:
       break
   }
+  if (form === '蝌蚪' || form === '卵') {
+    behavior = 0
+  }
 
   /** 行為 */
   // 需要確認一下，上傳用的跟書寫用的id是否確認相同
@@ -54,7 +57,7 @@ function parseRecordDetail (str) {
     })
   )
 
-  if (!habitat.detailId) {
+  if (!habitat || !habitat.detailId) {
     console.warn('看不懂這個棲地代號');
     return null
   }
