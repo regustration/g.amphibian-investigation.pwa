@@ -21,6 +21,7 @@ $(() => {
     } finally {
       $('warning-toast')[0].input = message
       message = []
+      $('investigation-list')[0].copytime = ''
     }
   })
 })

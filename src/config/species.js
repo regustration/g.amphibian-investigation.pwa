@@ -34,7 +34,7 @@ export const SPECIES = [
       ], [
         'Limnonectes', [
           [
-            'fujianensis', 12, ['福建大頭蛙', '大頭']
+            'fujianensis', 12, ['福建大頭蛙', '大頭', '福建']
           ]
         ]
       ]

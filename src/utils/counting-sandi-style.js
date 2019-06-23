@@ -9,10 +9,15 @@ function parseRecordDetail (str) {
     console.warn('empty line!');
     return null
   }
-  // 物種, 型態+聽音, 數量, 行為, 棲地, 備註
+  // 型態, 數量, 行為+聽音, 棲地, 備註
   let [form, habitat, count, behavior, note] = items.map(e => (e || '').trim())
 
   form = ['', '卵', '蝌蚪', '幼', '公', '母', '成', '鳴'][form]
+  if (form === '蝌蚪' || form === '卵') {
+    note = behavior
+    behavior = count
+    count = 0
+  }
   count = Number(count)
   switch (behavior) {
     case '目3':
@@ -26,9 +31,6 @@ function parseRecordDetail (str) {
       break
     default:
       break
-  }
-  if (form === '蝌蚪' || form === '卵') {
-    behavior = 0
   }
 
   /** 行為 */
@@ -186,7 +188,6 @@ export default function parseText (str, message = []) {
     addSeeCount(res.see, spSee)
   })
 
-  console.log(res)
   return res.sort((a, b) => {
     const { species: sa } = a
     const { species: sb } = b
