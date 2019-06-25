@@ -5,13 +5,14 @@
         .py-3.px-2
           .mb-1 文字轉換模式
           .custom-control.custom-radio.custom-control-inline
-            input#counting-mode-1.custom-control-input(type="radio" name="counting-mode" checked)
-            label.custom-control-label(for="counting-mode-1") Sandi's style
+            input#counting-style-1.custom-control-input(type="radio" name="counting-style" value="sandi" checked)
+            label.custom-control-label(for="counting-style-1") Sandi's style
           .custom-control.custom-radio.custom-control-inline
-            input#counting-mode-2.custom-control-input(type="radio" name="counting-mode")
-            label.custom-control-label(for="counting-mode-2") Gus' style
-        warning-toast.py-3.mb-3
-        .form-group
+            input#counting-style-2.custom-control-input(type="radio" name="counting-style" value="gus")
+            label.custom-control-label(for="counting-style-2") Gus' style
+          style-instructor(counting-style="sandi")
+        warning-toast
+        .form-group.mt-3
           textarea#raw-text.form-control(cols="30" rows="10" style="white-space: nowrap;  overflow: auto;")
         button.btn.btn-primary(type="submit") 轉換！
 
