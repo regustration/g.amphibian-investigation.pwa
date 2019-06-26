@@ -128,6 +128,7 @@ class InvestigationList extends LitElement {
         <a href="#" class="button" @click="${this.outputApiData}">複製API資料</a>
         <small>API資料複製：${this.copytime || '-'}</small>
         <p>種類總數： ${result.length} 種</p>
+        <p>紀錄筆數：${result.reduce((acc, item) => acc + item.records.reduce((acc, record) => acc + record[1].length, 0), 0)} 筆</p>
         ${this._summaryOverview(result.see, result.hear)}
         <div class="list-block">${result.map(res => this._listItem(res))}</div>
       `}
