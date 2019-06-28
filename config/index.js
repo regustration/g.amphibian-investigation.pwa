@@ -42,7 +42,26 @@ const dev = {
 const workbox = {
   swDest: 'service-worker.js',
   clientsClaim: true,
-  skipWaiting: true
+  skipWaiting: true,
+  runtimeCaching: [
+    {
+    urlPattern: new RegExp('^https://cdnjs\.cloudflarecors\.com/'),
+    handler: 'StaleWhileRevalidate',
+    options: {
+      cacheableResponse: {
+        statuses: [0, 200]
+      }
+    }
+    }, {
+      urlPattern: new RegExp('^https://code\.jquery\.com/'),
+      handler: 'StaleWhileRevalidate',
+      options: {
+        cacheableResponse: {
+          statuses: [0, 200]
+        }
+      }
+    }
+  ]
 }
 
 const manifest = {
