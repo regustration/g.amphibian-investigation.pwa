@@ -60,6 +60,14 @@ const workbox = {
           statuses: [0, 200]
         }
       }
+    }, {
+      urlPattern: new RegExp('^https://stackpath\.bootstrapcdn\.com/'),
+      handler: 'StaleWhileRevalidate',
+      options: {
+        cacheableResponse: {
+          statuses: [0, 200]
+        }
+      }
     }
   ]
 }
