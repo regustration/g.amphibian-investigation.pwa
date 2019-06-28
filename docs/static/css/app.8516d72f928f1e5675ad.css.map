@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.styl"],"names":[],"mappings":"AAAA,YACE,oBAAqB,CACrB,UAAW,CACX,gBAAiB,CACjB,kBAAmB,CACnB,iBACF","file":"app.8516d72f928f1e5675ad.css","sourcesContent":[".code-block {\n  display: inline-block;\n  width: 100%;\n  padding: 8px 12px;\n  background: #fafafa;\n  border-radius: 5px;\n}\n/*# sourceMappingURL=src/styles/main.css.map */"]}

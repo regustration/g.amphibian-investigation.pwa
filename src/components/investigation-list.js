@@ -13,6 +13,9 @@ class InvestigationList extends LitElement {
       :host {
         display: block;
       }
+      .hidden {
+        display: none;
+      }
       .list-block {
         display: grid;
         grid-template-columns: repeat(3, .3333fr);
@@ -125,8 +128,10 @@ class InvestigationList extends LitElement {
     const { result } = this
     return html`
       ${!result || !result.length ? '等待轉換' : html`
-        <a href="#" class="button" @click="${this.outputApiData}">複製API資料</a>
-        <small>API資料複製：${this.copytime || '-'}</small>
+        <div class="hidden">
+          <a href="#" class="button" @click="${this.outputApiData}">複製API資料</a>
+          <small>API資料複製：${this.copytime || '-'}</small>
+        </div>
         <p>種類總數： ${result.length} 種</p>
         <p>紀錄筆數：${result.reduce((acc, item) => acc + item.records.reduce((acc, record) => acc + record[1].length, 0), 0)} 筆</p>
         ${this._summaryOverview(result.see, result.hear)}

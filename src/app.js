@@ -4,6 +4,7 @@ import './components/style-instructor'
 import './components/warning-toast'
 import parseTextSandi from './utils/counting-sandi-style'
 import parseTextGus from './utils/counting-gus-style'
+require('./styles/main.styl')
 
 $(() => {
   const $rawText = $('#raw-text')
