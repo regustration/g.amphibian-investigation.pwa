@@ -76,7 +76,7 @@ class StyleInstructor extends LitElement {
           面天樹蛙 4.16.1.目3<br>
           小雨 4.15.2.6 5.15.2.6 4.15.2.9<br>
           樹蟾<br>
-          &emsp;4.4.5.2 5.4.3.2 4.3.3.3<br>
+          &emsp;4.6.5.2 5.6.3.2 4.6.3.3<br>
           &emsp;3.13.2.9<br>
           </code>
         </p>
