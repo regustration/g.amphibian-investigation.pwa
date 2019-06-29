@@ -156,7 +156,7 @@ export const SPECIES = [
           ]
         ]
       ], [
-        'Rhacophorus', [
+        'Zhangixalus', [
           [
             'arvalis', 28, ['諸羅樹蛙', '諸羅']
           ], [
