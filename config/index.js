@@ -43,18 +43,9 @@ const workbox = {
   swDest: 'service-worker.js',
   clientsClaim: true,
   skipWaiting: true,
-  runtimeCaching: [
-    {
-    urlPattern: new RegExp('^https://cdnjs\.cloudflarecors\.com/'),
-    handler: 'StaleWhileRevalidate',
-    options: {
-      cacheableResponse: {
-        statuses: [0, 200]
-      }
-    }
-    }, {
+  runtimeCaching: [{
       urlPattern: new RegExp('^https://code\.jquery\.com/'),
-      handler: 'StaleWhileRevalidate',
+      handler: 'CacheFirst',
       options: {
         cacheableResponse: {
           statuses: [0, 200]
@@ -62,7 +53,7 @@ const workbox = {
       }
     }, {
       urlPattern: new RegExp('^https://stackpath\.bootstrapcdn\.com/'),
-      handler: 'StaleWhileRevalidate',
+      handler: 'CacheFirst',
       options: {
         cacheableResponse: {
           statuses: [0, 200]
