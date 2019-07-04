@@ -45,7 +45,7 @@ const workbox = {
   skipWaiting: true,
   runtimeCaching: [{
       urlPattern: new RegExp('^https://code\.jquery\.com/'),
-      handler: 'CacheFirst',
+      handler: 'StaleWhileRevalidate',
       options: {
         cacheableResponse: {
           statuses: [0, 200]
@@ -53,7 +53,7 @@ const workbox = {
       }
     }, {
       urlPattern: new RegExp('^https://stackpath\.bootstrapcdn\.com/'),
-      handler: 'CacheFirst',
+      handler: 'StaleWhileRevalidate',
       options: {
         cacheableResponse: {
           statuses: [0, 200]
