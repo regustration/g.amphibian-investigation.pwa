@@ -44,15 +44,7 @@ const workbox = {
   clientsClaim: true,
   skipWaiting: true,
   runtimeCaching: [{
-      urlPattern: new RegExp('^https://code\.jquery\.com/'),
-      handler: 'StaleWhileRevalidate',
-      options: {
-        cacheableResponse: {
-          statuses: [0, 200]
-        }
-      }
-    }, {
-      urlPattern: new RegExp('^https://stackpath\.bootstrapcdn\.com/'),
+      urlPattern: new RegExp('https:.*min\.(css|js)'),
       handler: 'StaleWhileRevalidate',
       options: {
         cacheableResponse: {
