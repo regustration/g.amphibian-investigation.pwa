@@ -3,7 +3,7 @@ var script = document.createElement('script')
 script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'
 document.getElementsByTagName('head')[0].appendChild(script)
 
-const apiDatas = JSON.parse('DATA GOES HERE')
+let apiDatas = JSON.parse('DATA GOES HERE')
 
 const upload = data =>
   $.get(
@@ -15,7 +15,7 @@ const upload = data =>
     }
   )
 
-Promise.all(apiDatas.map(upload))
+const gogo = _ => Promise.all(apiDatas.map(upload))
   .then(res => {
     $('iframe[name="main_show"]')[0]
       .contentDocument
