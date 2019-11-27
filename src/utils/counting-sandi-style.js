@@ -4,9 +4,9 @@ import { BEHAVIORS } from '../config/behaviors'
 import { pushSpeciesRecord, pushRecord, addSeeCount } from './utils'
 
 function parseRecordDetail (str) {
-  const items = str.trim().split('.')
+  const items = str.trim().split(/\.|,/)
   if (items.length < 1) {
-    console.warn('empty line!');
+    console.warn('empty line!')
     return null
   }
   // 型態, 數量, 行為+聽音, 棲地, 備註
@@ -38,7 +38,7 @@ function parseRecordDetail (str) {
   const bArr = BEHAVIORS.find(b => b[0] === Number(behavior) - 1)
 
   if (!bArr) {
-    console.warn('看不懂這個行為代號');
+    console.warn('看不懂這個行為代號')
     return null
   }
 
@@ -60,7 +60,7 @@ function parseRecordDetail (str) {
   )
 
   if (!habitat || !habitat.detailId) {
-    console.warn('看不懂這個棲地代號');
+    console.warn('看不懂這個棲地代號')
     return null
   }
 
