@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0937a15207bdcc67e0c07a5c5ecd1a6",
+    "revision": "0b1bd9713800c586bb9c88991450965a",
     "url": "/g.amphibian-investigation.pwa/index.html"
   },
   {
-    "revision": "f3d544066c33af76fdf0",
+    "revision": "175adc14d4cbdfbf2af9",
     "url": "/g.amphibian-investigation.pwa/static/css/app.8516d72f928f1e5675ad.css"
   },
   {
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_96x96.png"
   },
   {
-    "revision": "f3d544066c33af76fdf0",
-    "url": "/g.amphibian-investigation.pwa/static/js/app.30db903347c34a5df44f.js"
+    "revision": "175adc14d4cbdfbf2af9",
+    "url": "/g.amphibian-investigation.pwa/static/js/app.fae1c30e5c21df4a5e62.js"
   },
   {
     "revision": "c2e207fc9100aaffcad8",
