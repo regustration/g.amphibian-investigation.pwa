@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6383887e67049d34812bf22fca53eca5",
+    "revision": "0b389d03f8e794731601d260c03587f6",
     "url": "/g.amphibian-investigation.pwa/index.html"
   },
   {
