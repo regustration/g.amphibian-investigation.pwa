@@ -23,7 +23,7 @@ function onLoad () {
 
     $('iframe[name="main_show"]')[0]
       .contentDocument
-      .querySelectorAll('frame[name="main_top"]')[0]
+      .querySelectorAll('iframe[name="main_top"]')[0]
       .contentDocument
       .location
       .reload()
