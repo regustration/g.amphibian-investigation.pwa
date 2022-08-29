@@ -50,8 +50,16 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: ['pug-loader']
-        // loader: ['html-loader', 'pug-html-loader']
+        loader: [
+          {
+            loader: 'html-loader',
+            options: {
+                minimize: false
+                // 不壓縮 HTML
+            }
+          },
+          'pug-plain-loader'
+        ]
       }
     ]
   },
