@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b389d03f8e794731601d260c03587f6",
+    "revision": "b5d62fb43969cc9d5f0678944b4b2e72",
     "url": "/g.amphibian-investigation.pwa/index.html"
   },
   {
-    "revision": "6e62e5c82ba9e5165161",
+    "revision": "39f4f86b576714c9c3c1",
     "url": "/g.amphibian-investigation.pwa/static/css/app.8516d72f928f1e5675ad.css"
   },
   {
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/g.amphibian-investigation.pwa/static/img/icons/icon_96x96.png"
   },
   {
-    "revision": "6e62e5c82ba9e5165161",
-    "url": "/g.amphibian-investigation.pwa/static/js/app.a59ac76a9f3e217283e1.js"
+    "revision": "39f4f86b576714c9c3c1",
+    "url": "/g.amphibian-investigation.pwa/static/js/app.95dd0e0e6f2ca47158f2.js"
   },
   {
-    "revision": "296e61868e5f5aa00608",
-    "url": "/g.amphibian-investigation.pwa/static/js/vendor.cba7c8ec40e85678986b.js"
+    "revision": "4f2f02982bb347cf1062",
+    "url": "/g.amphibian-investigation.pwa/static/js/vendor.61b0e8228d03982919ac.js"
   },
   {
     "revision": "d45270bb2019acf3a1140c08d964a004",

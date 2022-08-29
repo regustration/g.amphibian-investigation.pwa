@@ -1,6 +1,6 @@
 {
   "name": "g.amphibian-investigation.pwa",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Amphibian Investigation",
   "engines": {
     "node": ">=6.11.5",
