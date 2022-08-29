@@ -128,7 +128,7 @@ class InvestigationList extends LitElement {
     const { result } = this
     return html`
       ${!result || !result.length ? '等待轉換' : html`
-        <div class="hidden">
+        <div>
           <a href="#" class="button" @click="${this.outputApiData}">複製API資料</a>
           <small>API資料複製：${this.copytime || '-'}</small>
         </div>
