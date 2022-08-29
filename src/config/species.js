@@ -6,6 +6,10 @@ export const SPECIES = [
           ['bankorensis', 1, ['盤古蟾蜍', '盤古']]
         ]
       ], [
+        'Cyclophthalmus', [
+          ['mniszechi', 38, ['海蟾蜍', '海蟾', '蔗蟾']]
+        ]
+      ], [
         'Duttaphrynus', [
           ['melanostictus', 2, ['黑眶蟾蜍', '黑眶', '黑框']]
         ]
@@ -25,6 +29,14 @@ export const SPECIES = [
       ], [
         'Limnonectes', [
           ['fujianensis', 12, ['福建大頭蛙', '大頭', '福建']]
+        ]
+      ]
+    ]
+  ], [
+    'Eleutherodactylidae', [
+      [
+        'Eleutherodactylus', [
+          ['planirostris', 37, ['溫室蟾', '溫室']]
         ]
       ]
     ]
